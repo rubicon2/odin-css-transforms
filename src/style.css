@@ -45,6 +45,9 @@ body {
   opacity: 0.5;
   display: grid;
   place-content: center;
+
+  outline: 5px solid black;
+  outline-offset: -5px;
 }
 
 .face-text {
