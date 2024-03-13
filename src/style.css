@@ -70,7 +70,7 @@ body {
 }
 
 .rear-face {
-  background-color: yellow;
+  background-color: wheat;
   transform: translateZ(-200px) rotateY(180deg);
 }
 
