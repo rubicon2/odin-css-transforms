@@ -1,3 +1,73 @@
 :root {
   box-sizing: border-box;
 }
+
+body {
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  overflow: hidden;
+}
+
+.cube {
+  width: 500px;
+  height: 500px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+  transform-style: preserve-3d;
+  transform-origin: center;
+  transform: perspective(300px) rotateX(-30deg) rotateY(-35deg);
+}
+
+.face {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  opacity: 0.5;
+  display: grid;
+  place-content: center;
+}
+
+.face-text {
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  opacity: 0.8;
+}
+
+.front-face {
+  background-color: red;
+}
+
+.left-face {
+  background-color: blue;
+  transform: translateX(-100px) translateZ(-100px) rotateY(90deg);
+}
+
+.right-face {
+  background-color: green;
+
+  transform: translateX(100px) translateZ(-100px) rotateY(90deg);
+}
+
+.rear-face {
+  background-color: yellow;
+  transform: translateZ(-200px) rotateY(180deg);
+}
+
+.top-face {
+  background-color: cornflowerblue;
+  transform: translateY(-100px) translateZ(-100px) rotateX(90deg);
+}
+
+.bottom-face {
+  background-color: darksalmon;
+  transform: translateY(100px) translateZ(-100px) rotateX(90deg);
+}
