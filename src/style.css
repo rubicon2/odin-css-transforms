@@ -17,10 +17,10 @@ body {
 
 @keyframes rotationY360 {
   from {
-    transform: rotateX(-30deg);
+    transform: rotateX(0) rotateY(720deg) rotateZ(0);
   }
   to {
-    transform: rotateX(-30deg) rotate3d(0, 1, 0, 360deg);
+    transform: rotateX(360deg) rotateY(0) rotateZ(360deg);
   }
 }
 
@@ -36,7 +36,7 @@ body {
 
   transform-style: preserve-3d;
 
-  animation: rotationY360 5s infinite;
+  animation: rotationY360 10s infinite;
   animation-timing-function: linear;
 }
 
