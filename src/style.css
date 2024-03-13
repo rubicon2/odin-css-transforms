@@ -60,7 +60,7 @@ body {
 
 .left-face {
   background-color: blue;
-  transform: translateX(-100px) translateZ(-100px) rotateY(90deg);
+  transform: translateX(-100px) translateZ(-100px) rotateY(-90deg);
 }
 
 .right-face {
