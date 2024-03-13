@@ -12,6 +12,15 @@ body {
   overflow: hidden;
 }
 
+@keyframes rotationY360 {
+  from {
+    transform: perspective(300px) rotateX(-30deg) rotateY(0deg);
+  }
+  to {
+    transform: perspective(300px) rotateX(-30deg) rotateY(360deg);
+  }
+}
+
 .cube {
   width: 500px;
   height: 500px;
@@ -22,8 +31,11 @@ body {
 
   position: relative;
   transform-style: preserve-3d;
-  transform-origin: center;
-  transform: perspective(300px) rotateX(-30deg) rotateY(-35deg);
+  transform-origin: 50% 50% -100px;
+  transform: perspective(300px) rotateX(-30deg);
+
+  animation: rotationY360 5s infinite;
+  animation-timing-function: linear;
 }
 
 .face {
