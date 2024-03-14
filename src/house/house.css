@@ -103,3 +103,51 @@
 .rear-roof {
   transform: translate3d(0, -44px, 0) rotateX(-63.435deg);
 }
+
+.door {
+  width: 40px;
+  height: 70px;
+  background-color: rgb(218, 121, 121);
+  transform: translate3d(0, 15px, 100px);
+
+  transform-style: preserve-3d;
+
+  border: 2px solid rgba(0, 0, 0, 0.473);
+}
+
+.window {
+  width: 10px;
+  height: 10px;
+  background-color: lightblue;
+  border: 2px solid rgba(0, 0, 0, 0.466);
+}
+
+.door-window {
+  top: 5px;
+  left: 5px;
+}
+
+.door-window:nth-child(n + 2) {
+  top: 5px;
+  left: 20px;
+}
+
+.door-window:nth-child(n + 3) {
+  top: 20px;
+  left: 5px;
+}
+
+.door-window:nth-child(n + 4) {
+  top: 20px;
+  left: 20px;
+}
+
+.door-window:nth-child(n + 5) {
+  top: 35px;
+  left: 5px;
+}
+
+.door-window:nth-child(n + 6) {
+  top: 35px;
+  left: 20px;
+}

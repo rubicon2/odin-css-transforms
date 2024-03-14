@@ -6,6 +6,19 @@ function createWall() {
   return wall;
 }
 
+function createDoor() {
+  const door = document.createElement('div');
+  door.classList.add('door');
+
+  for (let i = 0; i < 6; i += 1) {
+    const win = document.createElement('div');
+    win.classList.add('window', 'door-window');
+    door.appendChild(win);
+  }
+
+  return door;
+}
+
 function createRoofSide() {
   const roofWall = document.createElement('div');
   roofWall.classList.add('roof-side');
@@ -56,6 +69,10 @@ function createHouse() {
   const rearRoof = createWall();
   rearRoof.classList.add('roof', 'rear-roof');
   house.appendChild(rearRoof);
+
+  const frontDoor = createDoor();
+  frontDoor.classList.add('front-door');
+  house.appendChild(frontDoor);
 
   return house;
 }
