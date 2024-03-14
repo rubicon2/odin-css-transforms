@@ -38,12 +38,10 @@ function createHouse() {
 
   const frontWall = createWall();
   frontWall.classList.add('front-wall');
-  frontWall.innerText = 'Front';
   house.appendChild(frontWall);
 
   const rearWall = createWall();
   rearWall.classList.add('rear-wall');
-  rearWall.innerText = 'Rear';
   house.appendChild(rearWall);
 
   const rightWall = createWall();
