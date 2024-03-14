@@ -35,26 +35,20 @@
 }
 
 .house {
-  width: 500px;
-  height: 500px;
-
   display: flex;
   justify-content: center;
   align-items: center;
-
   transform-style: preserve-3d;
 }
 
 .wall {
   width: 200px;
   height: 100px;
-  outline: 2px solid black;
+  outline: 2px solid rgba(0, 0, 0, 0.205);
   outline-offset: -2px;
-  background-color: cadetblue;
-  opacity: 0.5;
-
   display: grid;
   place-items: center;
+  background-color: lightpink;
 }
 
 .front-wall {
@@ -66,10 +60,12 @@
 }
 
 .right-wall {
+  outline: none;
   transform: translate3d(100px, 0, 0) rotateY(90deg);
 }
 
 .left-wall {
+  outline: none;
   transform: translate3d(-100px, 0, 0) rotateY(90deg);
 }
 
@@ -80,8 +76,7 @@
   border-left: 100px solid transparent;
   border-right: 100px solid transparent;
   /* border-bottom determines the height */
-  border-bottom: 50px solid cadetblue;
-  opacity: 0.5;
+  border-bottom: 50px solid lightpink;
 }
 
 .left-roof-side {
@@ -94,6 +89,7 @@
 .roof {
   height: 112px;
   transform-origin: 0 0 0;
+  background-color: #a86335;
 }
 
 .front-roof {
